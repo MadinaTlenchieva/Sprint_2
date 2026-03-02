@@ -18,13 +18,13 @@ public class Main {
 
         ShoppingCart cart = new ShoppingCart(items);
 
-        System.out.println("Сумма без скидки: " +
+        System.out.printf("Сумма без скидки: %.2f%n",
                 cart.getTotalPriceWithoutDiscount());
 
-        System.out.println("Сумма со скидкой: " +
+        System.out.printf("Сумма со скидкой: %.2f%n",
                 cart.getTotalPriceWithDiscount());
 
-        System.out.println("Сумма вегетарианских продуктов без скидки: " +
+        System.out.printf("Сумма вегетарианских продуктов без скидки: %.2f%n",
                 cart.getTotalVegetarianPriceWithoutDiscount());
     }
 }
